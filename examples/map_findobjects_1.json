@@ -1,0 +1,103 @@
+{
+    "game_mode": "learn",
+    "max_steps": 3000,
+    "environment_params": {
+        "bounding_wall_color": [
+            0,
+            0.5,
+            1.0
+        ],
+        "light_intensity": 2.3,
+        "predefined_map": 0,
+        "map_size": [
+            100,
+            100
+        ]
+    },
+    "agent_params": {"action_model": "byvelocity", "agent_height": 1.0, "agent_width": 1.0, "max_linear_speed": 10.0, "max_angular_speed": 90.0, "observation_size": 84, "coordinates": [
+            10.0,
+            10.0
+        ], "heading": 0.0, "pickup_range": 5.0
+    },
+    "image_params": {
+        "zoom": 5,
+        "yaw_subdivisions": 4,
+        "vertical_subdivisions": 22
+    },
+    "objects": [
+        {"model": "1", "class": "tree", "coordinates": [
+                76.88451335107712,
+                16.598999071357838
+            ], "color": [
+                0.0,
+                0.3585421299410704,
+                0.3585421299410704
+            ], "motion_model": "stationary"
+        },
+        {"model": "2", "class": "tree", "coordinates": [
+                -79.10469730121663,
+                66.3753881435866
+            ], "color": [
+                0.16372882602754535,
+                0.6637288260275453,
+                0.6637288260275453
+            ], "motion_model": "stationary"
+        },
+        {"model": "1", "class": "tree", "coordinates": [
+                78.6286410363272,
+                -29.477103480508376
+            ], "color": [
+                0.02828617923664961,
+                0.5282861792366496,
+                0.5282861792366496
+            ], "motion_model": "stationary"
+        },
+        {"model": "2", "class": "barrel", "coordinates": [
+                -85.16494043272588,
+                80.13043268544317
+            ], "color": [
+                0.0,
+                0.0,
+                0.0
+            ], "motion_model": "stationary"
+        },
+        {"model": "1", "class": "barrel", "coordinates": [
+                -27.390259653178475,
+                -42.30800556919023
+            ], "color": [
+                0.0,
+                0.0,
+                0.0
+            ], "motion_model": "stationary"
+        },
+        {"model": "1", "class": "chair", "coordinates": [
+                79.25330466407493,
+                34.792954158897146
+            ], "color": [
+                0.0,
+                0.0,
+                0.0
+            ], "motion_model": "stationary"
+        },
+        {"model": "1", "class": "tent", "coordinates": [
+                -50.79612848973978,
+                18.88622605255705
+            ], "color": [
+                0.0,
+                0.0,
+                0.0
+            ], "motion_model": "stationary"
+        },
+        {"model": "2", "class": "geometric", "coordinates": [
+                10.558255396623245,
+                -10.959918279645077
+            ], "color": [
+                0.0,
+                0.0,
+                1.0
+            ], "motion_model": "stationary", "reward_stimulus": ["AgentCollide","AgentInteract"
+            ],"destroy_stimulus": ["AgentInteract"
+            ], "reward": 100.0
+        }
+    ]
+}

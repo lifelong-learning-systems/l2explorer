@@ -1,0 +1,175 @@
+{
+  "tests": [
+    {
+      "channel": "Reset",
+      "message": {
+        "action": "reset_environment",
+        "payload": {
+          "game_mode": "learn",
+          "max_steps": 3000,
+          "environment_params": {
+            "bounding_wall_color": [
+              0,
+              100,
+              255
+            ],
+            "light_intensity": 3.5,
+            "predefined_map": "1",
+            "map_size": [
+              100,
+              100
+            ]
+          },
+          "agent_params": {
+            "action_model": "byvelocity",
+            "agent_height": 1.0,
+            "agent_width": 1.0,
+            "max_linear_speed": 15.0,
+            "max_angular_speed": 85.0,
+            "observation_size": 84,
+            "coordinates": [
+              10.0,
+              10.0
+            ],
+            "heading": 0.0,
+            "pickup_range": 5.0
+          },
+          "image_params": {
+            "zoom": 5,
+            "yaw_subdivisions": 4,
+            "vertical_subdivisions": 22
+          },
+          "objects": [
+            {
+              "model": "1",
+              "class": "geometric",
+              "coordinates": [
+                9.558255396623245,
+                18.959918279645077
+              ],
+              "color": [
+                0.0,
+                0.0,
+                1.0
+              ],
+              "motion_model": "stationary",
+              "reward_stimulus": [
+                "AgentInteract"
+              ],
+              "destroy_stimulus": [
+                "AgentInteract"
+              ],
+              "reward": 100.0
+            },
+            {
+              "model": "1",
+              "class": "geometric",
+              "coordinates": [
+                9.599870369559627,
+                15.647969505291718
+              ],
+              "color": [
+                0.0,
+                0.0,
+                1.0
+              ],
+              "motion_model": "stationary",
+              "reward_stimulus": [
+                "AgentInteract"
+              ],
+              "destroy_stimulus": [
+                "AgentInteract"
+              ],
+              "reward": 100.0
+            },
+            {
+              "model": "1",
+              "class": "geometric",
+              "coordinates": [
+                10.406359009231341,
+                30.715634786321754
+              ],
+              "color": [
+                0.0,
+                0.0,
+                1.0
+              ],
+              "motion_model": "stationary",
+              "reward_stimulus": [
+                "AgentInteract"
+              ],
+              "destroy_stimulus": [
+                "AgentInteract"
+              ],
+              "reward": 100.0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "channel": "Reset",
+      "message": {
+        "action": "object_create",
+        "unique_name": "thing",
+        "payload": {
+          "class": "tree",
+          "model": "2",
+          "coordinates": [
+            33.4,
+            56.6
+          ],
+          "color": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "motion_model": "stationary"
+        }
+      }
+    },
+    {
+      "channel": "Debug",
+      "message": {
+        "action": "save_screenshot",
+        "payload": {
+          "filename": "l2explorer_screenshot.png",
+          "upscale_factor": 1
+        }
+      }
+    },
+    {
+      "channel": "Debug",
+      "message": {
+        "action": "get_debug_categories"
+      }
+    },
+    {
+      "channel": "Debug",
+      "message": {
+        "action": "set_debug_categories",
+        "payload": [
+          {
+            "category": "agent",
+            "active": true
+          }
+        ]
+      }
+    },
+    {
+      "channel": "State",
+      "message": {
+        "action": "get_observers"
+      }
+    },
+    {
+      "channel": "State",
+      "message": {
+        "action": "set_active_observers",
+        "state": [
+          "agent_params"
+        ]
+      }
+    }
+  ]
+}

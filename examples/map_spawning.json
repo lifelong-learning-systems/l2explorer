@@ -1,0 +1,69 @@
+{"game_mode": "learn", "max_steps": 300, "environment_params": {"bounding_wall_color": [
+            0,
+            0.5,
+            1.0
+        ], "light_intensity": 3.0, "predefined_map": 0, "map_size": [
+            100,
+            100
+        ]
+    },
+
+    "agent_params": {"action_model": "byvelocity", "agent_height": 1.0, "agent_width": 1.0, "max_linear_speed": 10.0, "max_angular_speed": 90.0, "observation_size": 84, "coordinates": [
+            10.0,
+            10.0
+        ], "heading": 0.0, "pickup_range": 5.0
+    }, "image_params": {"zoom": 5, "yaw_subdivisions": 4, "vertical_subdivisions": 22
+    }, "objects": [
+        {"model": "1", "class": "geometric", "coordinates": [
+                9.558255396623245,
+                18.959918279645077
+            ], "color": [
+                0.0,
+                0.0,
+                1.0
+            ],"motion_model": "stationary",
+            "destroy_stimulus": [
+                "AgentCollide"
+            ],
+            "reward_once_stimulus": [
+                "AgentInRange"
+            ],
+            "range_stimulus_distance": 2,
+            "reward": 100.0
+        },
+        {"model": "1", "class": "geometric", "coordinates": [
+                9.599870369559627,
+                15.647969505291718
+            ], "color": [
+                0.0,
+                0.0,
+                1.0
+            ],"motion_model": "stationary",
+            "destroy_stimulus": [
+                "AgentCollide"
+            ],
+            "reward_once_stimulus": [
+                "AgentInRange"
+            ],
+            "range_stimulus_distance": 2,
+            "reward": 100.0
+        },
+        {"model": "1", "class": "geometric", "coordinates": [
+                10.406359009231341,
+                30.715634786321754
+            ], "color": [
+                0.0,
+                0.0,
+                1.0
+            ],"motion_model": "stationary",
+            "destroy_stimulus": [
+                "AgentCollide"
+            ],
+            "reward_once_stimulus": [
+                "AgentInRange"
+            ],
+            "range_stimulus_distance": 2,
+            "reward": 100.0
+        }
+    ]
+}

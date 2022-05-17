@@ -1,0 +1,23 @@
+{
+    "logging_base_dir": "logs_simple",
+    "scenario": [
+        {"type": "train", "regimes":
+            [{"task": "Task1", "count": 2, "params": {"map": "../map_findobjects_0.json", "maxsteps": 200}}]
+        },
+
+        {"type": "test", "regimes":
+            [{"task": "Task1", "count": 2, "params": {"map": "../map_findobjects_0.json", "maxsteps": 200}}, {"task": "Task2", "count": 1, "params": {"map": "../map_findobjects_1.json", "maxsteps": 200}}]
+        },
+
+        {"type": "train", "regimes":
+            [
+                {"task": "Task2", "count": 2, "params": {"map": "../map_findobjects_1.json", "maxsteps": 200}}, {"task": "Task1", "count": 1, "params": {"map": "../map_findobjects_0.json", "maxsteps": 200}},
+                {"task": "Task2", "count": 2, "params": {"map": "../map_findobjects_1.json", "maxsteps": 200}}, {"task": "Task1", "count": 1, "params": {"map": "../map_findobjects_0.json", "maxsteps": 200}}
+            ]
+        },
+
+        {"type": "test", "regimes":
+            [{"task": "Task1", "count": 2, "params": {"map": "../map_findobjects_0.json", "maxsteps": 200}}, {"task": "Task2", "count": 2, "params": {"map": "../map_findobjects_1.json", "maxsteps": 200}}]
+        }
+    ]
+}

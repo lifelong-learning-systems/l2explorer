@@ -1,0 +1,51 @@
+{"game_mode": "learn", "max_steps": 300, "environment_params": {"bounding_wall_color": [
+            0,
+            0.5,
+            1.0
+        ], "light_intensity": 3.0, "predefined_map": 0, "map_size": [
+            100,
+            100
+        ]
+    },
+
+    "agent_params": {"action_model": "byvelocity", "agent_height": 1.0, "agent_width": 1.0, "max_linear_speed": 10.0, "max_angular_speed": 90.0, "observation_size": 84, "coordinates": [
+            10.0,
+            10.0
+        ], "heading": 0.0, "pickup_range": 5.0
+    }, "image_params": {"zoom": 5, "yaw_subdivisions": 4, "vertical_subdivisions": 22
+    }, "objects": [
+        {"model": "1", "class": "geometric", "coordinates": [
+                10,
+                8
+            ], "color": [
+                0.0,
+                0.0,
+                1.0
+            ], "motion_model": "stationary", "reward_stimulus": ["AgentCollide","AgentInteract"
+            ],"destroy_stimulus": ["AgentInteract"
+            ], "reward": 100.0
+        },
+        {"model": "1", "class": "geometric", "coordinates": [
+                13,
+                10
+            ], "color": [
+                0.0,
+                0.0,
+                1.0
+            ], "motion_model": "stationary", "reward_stimulus": ["AgentCollide","AgentInteract"
+            ],"destroy_stimulus": ["AgentInteract"
+            ], "reward": 100.0
+        },
+        {"model": "2", "class": "geometric", "coordinates": [
+                10,
+                13
+            ], "color": [
+                1.0,
+                0.0,
+                1.0
+            ], "motion_model": "stationary", "reward_stimulus": ["AgentCollide","AgentInteract"
+            ],"destroy_stimulus": ["AgentInteract"
+            ], "reward": 100.0
+        }
+    ]
+}

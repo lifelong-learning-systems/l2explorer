@@ -1,0 +1,67 @@
+{
+	"game_mode": "learn",	
+	"max_steps": 3000,		
+	"environment_params": {
+		"bounding_wall_color": [0, 0, 255],
+		"light_intensity": 0.2,
+		"predefined_map" : 0,
+		"map_size": [100, 100]
+	},
+	"agent_params": {
+		"action_model": "byvelocity",	
+		"agent_height" : 1.0,
+		"agent_width" : 1.0,
+		"max_linear_speed": 10.0,
+		"max_angular_speed" : 90.0,
+		"observation_size": 128,
+		"initial_coordinates": [34.5, 45.6],
+		"pickup_range" : 5.0
+	},
+	"image_params" : {
+		"zoom" : 5,
+		"yaw_subdivisions" : 5,
+		"vertical_subdivisions" : 24
+	},
+	"objects": [{
+		"model": "",
+		"class": "tree",
+		"coordinates": [34.4, 56.6],
+		"color": [1.0, 1.0, 1.0],
+		"motion_model": "stationary",	
+		"reward": 0.0,
+		"collectible" : true,			
+		"reward_on" : "pickup", 		
+		"interaction_distance" : 0.0
+	}, {
+		"model": "4",
+		"class": "Chair",
+		"coordinates": [45.4, 54.5],
+		"color": [0.1, 0.4, 1.0],
+		"motion_model": "prey",
+		"reward": 150.0,
+		"collectible" : true,
+		"reward_on" : "pickup",
+		"interaction_distance" : 0.0
+	}, {
+		"model": "cube",
+		"class": "geometric",
+		"coordinates": [12.4, 4.5],
+		"color": [1.0, 0.0, 0.0],
+		"motion_model": "random_waypoints",
+		"reward": -35.0,
+		"collectible" : false,
+		"reward_on" : "in_range",
+		"interaction_distance" : 15.56
+	}, {
+		"model": "3",
+		"class": "building",
+		"coordinates": [12.4, 4.5],
+		"color": [1.0, 1.0, 1.0],
+		"motion_model": "stationary",
+		"reward": 0.0,
+		"collectible" : false,
+		"reward_on" : "collision",
+		"interaction_distance" : 0.0
+	}]
+
+}
